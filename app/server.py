@@ -8,12 +8,13 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
+# export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
 #export_file_url = 'https://drive.google.com/uc?export=download&id=ttps://drive.google.com/open?id=1IKEUPkCV-TrxsDnAFQ8z0Ko5ZPTmYes'
+export_file_url = 'https://www.dropbox.com/s/d1s9fbis0vzyida/export.pkl?raw=1'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
-#classes= ['dyed-lifted-polyps', 'dyed-resection-margins', 'esophagitis', 'normal-cecum', 'normal-pylorus', 'normal-z-line', 'polyps', 'ulcerative-colitis']
+#classes = ['black', 'grizzly', 'teddys']
+classes= ['dyed-lifted-polyps', 'dyed-resection-margins', 'esophagitis', 'normal-cecum', 'normal-pylorus', 'normal-z-line', 'polyps', 'ulcerative-colitis']
 path = Path(__file__).parent
 
 app = Starlette()
